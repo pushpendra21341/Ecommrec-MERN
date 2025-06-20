@@ -1,0 +1,76 @@
+/* Layout for sidebar + main content */
+.admin-user-logs-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Main container for user logs */
+.user-log-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  overflow-x: auto;
+}
+
+/* Filter controls */
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Table responsiveness */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Pagination styling */
+.pagination {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Optional: highlight row on hover */
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pagination {
+    flex-direction: column;
+  }
+}

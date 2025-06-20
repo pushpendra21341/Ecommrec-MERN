@@ -1,0 +1,178 @@
+/* Heading */
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.5vmax "Roboto";
+  text-align: center;
+}
+
+/* Product container */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+  min-height: 30vh;
+}
+
+/* Pagination */
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.pagination li {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #1976d2;
+  color: #1976d2;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.pagination li.active {
+  background-color: #1976d2;
+  color: white;
+}
+
+.pagination li:hover {
+  background-color: #e3f2fd;
+}
+
+/* Filter Panel Layout */
+.productsPage {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Sidebar Filter Box */
+.filterBox {
+  width: 250px;
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* Product Listing Section */
+.productsSection {
+  flex: 1;
+}
+
+/* Reset Button */
+.resetButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.resetButton:hover {
+  background-color: #155a9d;
+}
+
+/* Category & Filters */
+.categoryBox {
+  padding: 0;
+  margin: 0;
+}
+
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  font: 400 0.8vmax "Roboto";
+  margin: 0.4vmax 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.category-link:hover {
+  color: tomato;
+}
+
+.filterBox > fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+/* Page Size Dropdown */
+.pageSizeBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin: 1rem 1rem 0 0;
+  font-size: 14px;
+}
+
+.pageSizeBox select {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Mobile Filter Toggle */
+.filterToggleMobile {
+  display: none;
+  text-align: center;
+}
+
+.mobileFilterButton {
+  background-color: #1976d2;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .productsPage {
+    flex-direction: column;
+  }
+
+  .filterBox {
+    position: static;
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+    border-right: none;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+  }
+
+  .filterToggleMobile {
+    display: block;
+  }
+
+  .pagination li {
+    font-size: 1.7vmax;
+    padding: 1.5vmax 2vmax;
+  }
+
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+}

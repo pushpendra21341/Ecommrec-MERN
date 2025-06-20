@@ -1,0 +1,110 @@
+/* Container for Admin Logs */
+.adminLogsContainer {
+  flex: 1;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+}
+
+.adminLogsContainer h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Filter Section */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filters > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.filters input,
+.filters select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filters button {
+  padding: 8px 14px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: auto;
+  height: fit-content;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
+
+/* Log Table */
+.logTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logTable th,
+.logTable td {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.logTable th {
+  background-color: #e9ecef;
+  font-weight: 600;
+}
+
+/* No Logs */
+.logTable tr td[colspan="4"] {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-color: #007bff;
+}
+
+.pagination button:hover {
+  background-color: #e2e6ea;
+}

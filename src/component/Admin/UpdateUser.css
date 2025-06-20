@@ -1,0 +1,71 @@
+/* components/Admin/UpdateUser.css */
+.readonlyInfo {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  max-height: 300px;
+  overflow-y: auto;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.readonlyInfo h2 {
+  margin-bottom: 0.5rem;
+}
+/* UpdateUser.css */
+
+/* Increase the width of the form container */
+.updateUserContainer {
+  width: 100%;
+  max-width: 800px;    /* allow it to grow up to 800px */
+  margin: auto;        /* center it */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Make the form itself flex vertically and add some breathing room */
+.updateUserContainer .createProductForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Style the read-only info panel */
+.readonlyInfo {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+/* Ensure inputs and selects take full width available */
+.createProductForm > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.createProductForm > div > svg {
+  position: absolute;
+  left: 10px;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+.createProductForm > div > input,
+.createProductForm > div > select {
+  flex: 1;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem; /* left padding = space for icon */
+  margin-left: 0; /* remove this to avoid shifting input */
+  box-sizing: border-box;
+}
+.createProductForm h1 {
+  margin-bottom: 1rem;
+}
+/* Responsive tweak: on small screens make it full width */
+@media (max-width: 600px) {
+  .updateUserContainer {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
